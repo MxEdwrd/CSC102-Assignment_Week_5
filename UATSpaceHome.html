@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+    Author: Max Edward
+    Email: maxedwar@uat.edu
+    Wk4 Assignment, Assignment Name: Change Order Request from the Fleet Admiral
+-->
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+    <script src="countdown.js"></script>
+    <script src="playdice.js"></script>
+    <title>UAT Space Program - Max E.</title>
+  </head>
+  <body>
+    <br>
+    <div style="text-align: center">
+      <img class="logo" src="UATspaceLogo.jpg" alt="UAT Space Logo" />
+      <br>
+      <br>
+      <br>
+      <h1 class="title">UAT Space Program</h1>
+      <img class="profpic" src="Skelly.png" alt="Max Edward" />
+      <p class="text">
+        Welcome to the UAT Space Webpage. Please click Start to begin the
+        countdown procedure.
+      </p>
+    </div>
+    <br />
+    <div style="text-align: center" class="text">
+      <p>Countdown Status:</p>
+      <p id="countdownstatus">Waiting For Start...</p>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <button class="button" onclick="evenbtrcountdowntimer();">START</button>
+    </div>
+    <br />
+    <div class="textbackdropstatus"></div>
+    <div class="roll">
+      <p>Die Status</p>
+      <p id="die1status">Waiting For Start...</p>
+      <p id="die2status">Waiting For Start...</p>
+      <p id="diceresult">Dice Result</p>
+    </div>
+    <div class="roll">
+      <button
+        class="button"
+        style="position: fixed; left: 485px; bottom: 80px"
+        onclick="playdice()"
+      >
+        Roll the Dice!
+      </button>
+    </div>
+    <div class="textbackdropsum"></div>
+    <div class="sum">
+      Dice Sum
+      <p id="dicesum">Waiting For Start...</p>
+      <p id="wins">You Have Won <div id="winstatus">0</div>times.</p>
+      <p id="losses">You Have Lost <div id="losestatus">0</div>times.</p>
+    </div>
+  </body>
+</html>
