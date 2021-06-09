@@ -7,10 +7,10 @@ function checkcredit() {
 
   console.log("Full name is: " + fullname + ", and the badge ID is: " + badge);
 
-  if (fullname.length > 20 || fullname.length < 2) {
+  if (fullname.length > 20 || fullname.length < 3) {
     document.getElementById("loginstatus").innerHTML =
       "Full name is invalid. Please try again.";
-  } else if (badge > 999 || badge < -999) {
+  } else if (badge > 999 || badge < -999 || badge == 0) {
     document.getElementById("loginstatus").innerHTML =
       "Badge ID is invalid. Please try again.";
   } else {
